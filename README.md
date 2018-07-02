@@ -23,6 +23,7 @@ ApplicationContextTest：
 	第一个测试用例：(testGetBean)
 		测试ApplicationContext的getBean
 		实现类是ClassPathXmlApplicationContext
+		
 	第二个测试用例：(testGetBeanFromFileSystemContext)
 		测试FileSystemXmlApplicationContext的getBean
 		
@@ -31,6 +32,10 @@ ApplicationContextTest：
 ResourceTest：
 	第一个测试用例：(testClassPathResource)
 		测试classPath下的xml文件读取
+	
 	第二个测试用例：(testFileSystemResource)
 		测试文件系统下的xml文件读取
 	修改原有的测试用例中XmlBeanDefinitionReader的loadBeanDefinitions方法的参数为Resource接口类型，修改ApplicationContext的两个实现类。
+
+在ClassPathXmlApplicationContext和FileSystemXmlApplicationContext中有重复的代码，需要将他们提取出来，用模板方法设计模式，用一个抽象类来实现骨架方法，
+通过继承该抽象类重写自身的特殊方法。
