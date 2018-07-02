@@ -30,7 +30,7 @@ public class ClassPathResource implements Resource {
 	}
 
 	@Override
-	public String getDecription() {
+	public String getDescription() {
 		return this.path;
 	}
 
