@@ -24,7 +24,7 @@ public class FileSystemResource implements Resource {
 	}
 
 	@Override
-	public String getDecription() {
+	public String getDescription() {
 		return "file [" + this.file.getAbsolutePath() + "]";
 	}
 

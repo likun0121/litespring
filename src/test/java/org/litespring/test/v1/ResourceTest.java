@@ -2,12 +2,11 @@ package org.litespring.test.v1;
 
 import java.io.InputStream;
 
-import org.junit.Assert.*;
+import org.junit.Assert;
+import org.junit.Test;
 import org.litespring.core.io.ClassPathResource;
 import org.litespring.core.io.FileSystemResource;
 import org.litespring.core.io.Resource;
-import org.junit.Assert;
-import org.junit.Test;
 
 public class ResourceTest {
 

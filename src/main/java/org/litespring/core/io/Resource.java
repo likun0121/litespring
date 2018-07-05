@@ -6,5 +6,5 @@ import java.io.InputStream;
 public interface Resource {
 
 	InputStream getInputStream() throws IOException;
-	String getDecription();
+	String getDescription();
 }
