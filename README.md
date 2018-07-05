@@ -41,3 +41,5 @@ ResourceTest：
 通过继承该抽象类重写自身的特殊方法。
 
 抽象一个ConfigurableBeanFactory，来对ClassLoader进行setter和getter。
+
+抽象出singleton Scope的接口。
